@@ -1,0 +1,13 @@
+<apex:page controller="nleGoogleSheetsAuthController" action="{!Cmd_GetTokens}">
+    <apex:form id="googleAuthForm">
+        <apex:pageBlock mode="edit" title="Sheets API Authorization">
+            
+            <apex:pageBlockSection columns="1">
+                <apex:commandButton value="Connect to Sheets API" action="{!Cmd_ConnectToSheets}" rendered="{! !isSheetsConnected}" />
+                <apex:outputText value="Connected to Sheets API" rendered="{! isSheetsConnected}"></apex:outputText>
+                <apex:commandButton value="Revoke" action="{!Cmd_SheetsRevoke}" rendered="{! isSheetsConnected}" />
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
