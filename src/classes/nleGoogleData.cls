@@ -1,6 +1,6 @@
 global class nleGoogleData {
 	global class CalloutResult {
-        public Calendar Calendar {get;set;}
+        public Calendar Calendar {get;set;} // Google bye my love
         public Item GoogleEvent {get;set;}
         public CalendarList CalendarList {get;set;}
         public namle__Google_Calendar_Account__c gAccount {get;set;}
