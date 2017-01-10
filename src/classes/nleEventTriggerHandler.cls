@@ -10,7 +10,7 @@ public class nleEventTriggerHandler {
     private static void afterInsertUpdate(Map<Id, Event> oldEvents, List<Event> newEvents) {
         List<Id> contactIds = new List<Id>();
         for (Event newEvent : newEvents) {
-            
+            // This is test only
             Id contactId = newEvent.WhoId;
             if (contactId == null || contactId.getSobjectType() != Contact.SobjectType) {
                 continue;
